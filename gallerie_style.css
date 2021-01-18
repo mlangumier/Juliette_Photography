@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"); /* 'Yusei Magic' for titles*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); /* 'Poppins as main font*/
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"); /* 'Varela Round' (note used as of now)*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); /* Nunito (not used as of now)*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"); /* 'Noto Sans JP' (note used as of now)*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-image: url(images/background_back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  color: rgba(243, 244, 246, 1);
+  min-height: 100%;
+}
+
+.language {
+  height: 0px;
+  text-align: end;
+  position: relative;
+  top: -18px;
+  right: 3px;
+}
+.language img {
+  width: 40px;
+  position: relative;
+  top: 15px;
+}
+
+/*HEADER : TITLE AND SMO-LINKS*/
+
+header {
+  background-color: rgba(50, 50, 50, 0.8);
+  display: flex;
+  padding: 30px 30px 20px 15px;
+  border-bottom: 2px solid rgba(243, 244, 246, 0.9);
+  justify-content: space-between;
+}
+header h1 {
+  vertical-align: bottom;
+  font-family: "Yusei Magic", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 2.1rem;
+}
+.socialmedia a {
+  text-decoration: none;
+  color: rgba(243, 244, 246, 0.92);
+  font-size: 1.7rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: 8px;
+  left: 20px;
+}
+.socialmedia .nonactive {
+  color: rgba(243, 244, 246, 0.1);
+}
+
+/*NAVIGATION MENU*/
+
+.current {
+  background-color: rgba(160, 3, 3, 0.45);
+}
+nav ul {
+  display: flex;
+  font-size: 1.3em;
+  list-style-type: none;
+  justify-content: center;
+  text-transform: uppercase;
+}
+nav ul li {
+  margin: 15px;
+  margin-top: 75px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(243, 244, 246, 1);
+  font-family: "Yusei Magic", Helvetica, Arial, sans-serif;
+  padding: 5px 20px 5px 20px;
+  margin: 0 7px 0 7px;
+  border: 2px solid rgba(243, 244, 246, 1);
+  border-radius: 0.2rem;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgba(7, 6, 5, 1);
+  padding: 5px 20px 5px 20px;
+  border: 2px solid rgba(243, 244, 246, 1);
+  background-color: rgba(243, 244, 246, 0.9);
+  border-radius: 0.2rem;
+  transition: 0.7s ease;
+}
+
+/*FOOTER*/
+
+.footer {
+  margin-top: 250px;
+  padding: 10px 20px 10px 10px;
+  font-size: 0.8rem;
+  background-color: rgba(50, 50, 50, 0.8);
+  border-top: 2px solid rgba(243, 244, 246, 0.9);
+  text-align: right;
+}
+
+/* Gallerie GRID */
+
+.gallerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(300px));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 20px;
+}
+.image-gallerie {
+  width: 100%;
+}

@@ -17,6 +17,7 @@ body {
   background-attachment: fixed;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   color: rgba(243, 244, 246, 1);
+  min-height: 100%;
 }
 
 .language {
@@ -143,11 +144,14 @@ nav ul li a:hover {
 }
 .lienscontenu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .bloc_article {
   display: flex;
+  min-width: 350px;
+  max-width: 400px;
   text-align: left;
   margin: 0 5px 0 5px;
 }
@@ -202,4 +206,48 @@ nav ul li a:hover {
   background-color: rgba(50, 50, 50, 0.8);
   border-top: 2px solid rgba(243, 244, 246, 0.9);
   text-align: right;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 750px) {
+  body {
+    min-width: 350px;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .language {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  nav ul li {
+    margin-top: 15px;
+  }
+
+  .introduction {
+    margin-top: 50px;
+  }
+
+  .découvrez_bloc {
+    margin-top: 50px;
+    text-align-last: center;
+  }
+  .lienscontenu {
+    margin-top: 20px;
+  }
+  .bloc_article {
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
 }
